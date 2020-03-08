@@ -102,9 +102,5 @@ public class MyMaps extends FragmentActivity implements OnMapReadyCallback {
         {
             e.printStackTrace();
         }
-
-
-
-
     }
 }
