@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
@@ -32,4 +33,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.google.firebase:firebase-core:9.2.0'                        // this line must be included to integrate with Firebase
+    implementation 'com.google.firebase:firebase-messaging:9.2.0'                   // this line must be included to use FCM
+    implementation 'com.google.android.gms:play-services-location:9.2.0'
+    implementation 'com.google.android.gms:play-services-places:9.2.0'
 }
+

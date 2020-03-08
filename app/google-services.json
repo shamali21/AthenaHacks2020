@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "427575653614",
+    "firebase_url": "https://anthenahacks2020.firebaseio.com",
+    "project_id": "anthenahacks2020",
+    "storage_bucket": "anthenahacks2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427575653614:android:d998c5d3aca82dcd8fafff",
+        "android_client_info": {
+          "package_name": "com.example.athenahack2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427575653614-ik87s0e53jlu6rhm2v49k740o01mg1i6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNmQ0NvhwDLcIeYgR30V6w2ZYN8lEyQ48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427575653614-ik87s0e53jlu6rhm2v49k740o01mg1i6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
