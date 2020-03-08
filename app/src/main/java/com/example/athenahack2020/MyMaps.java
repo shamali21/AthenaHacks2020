@@ -66,9 +66,16 @@ public class MyMaps extends FragmentActivity implements OnMapReadyCallback {
         { @Override
             public void onLocationChanged(Location location)
             {
-                latlng = new LatLng(location.getLatitude(), location.getLongitude());
-                mMap.addMarker(new MarkerOptions().position(latlng).title("My Position"));
-                mMap.moveCamera(CameraUpdateFactory.newLatLng(latlng));
+                try
+                {
+                    latlng = new LatLng(location.getLatitude(), location.getLongitude());
+                    mMap.addMarker(new MarkerOptions().position(latlng).title("My Position"));
+                    mMap.moveCamera(CameraUpdateFactory.newLatLng(latlng));
+                }
+                catch (SecurityException e)
+                {
+                    e.printStackTrace();
+                }
             }
             @Override
             public void onStatusChanged(String s, int i, Bundle bundle)
@@ -86,6 +93,7 @@ public class MyMaps extends FragmentActivity implements OnMapReadyCallback {
 
             }
         };
+        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
         try
         {
             locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME, MIN_DISTANCE, locationListener);
